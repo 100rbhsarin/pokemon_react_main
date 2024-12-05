@@ -110,6 +110,14 @@ setError(error)
                return <PokemonCards 
                key={curPokemon.id}
                 pokemonData={curPokemon}
+
+// What it does:
+
+// # pokemonData is a prop that you're passing to the PokemonCards component.
+// # It allows the child component (PokemonCards) to receive data (the curPokemon object) from the parent component (PokemonSearch.map).
+
+// Why it's needed:
+// # This is how React components share information. pokemonData={curPokemon} gives PokemonCards access to the specific Pokémon's data (e.g., name, type, abilities, etc.).
                 />
             })}
         </ul>
